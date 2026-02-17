@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1F2937;
+}
+
+/* Feature Icons */
+.feature-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #F3F4F6;
+    transition: all 0.3s ease;
+}
+
+.feature-icon-box {
+    background-color: #EEF2FF;
+    color: #5B42F3;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Product Card Image Wrapper */
+.img-wrapper {
+    background: #F8F8F8;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.img-wrapper img {
+    max-height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+/* Navbar links */
+.navbar .menu li a {
+    transition: color 0.2s;
+}
