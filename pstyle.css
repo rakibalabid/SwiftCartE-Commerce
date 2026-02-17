@@ -1,0 +1,13 @@
+
+.category-tab {
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #e5e7eb !important;
+}
+
+h1 {
+    letter-spacing: -0.025em;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}

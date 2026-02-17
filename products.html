@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | SwiftCart</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="pstyle.css">
+</head>
+<body class="bg-white">
+
+    <header class="fixed top-0 w-full z-50 bg-white border-b border-gray-100">
+        <div class="navbar max-w-7xl mx-auto px-4 lg:px-10">
+            <div class="navbar-start">
+                <a href="index.html" class="text-2xl font-bold text-[#5B42F3]">SwiftCart</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-semibold text-gray-600 gap-4">
+                    <li><a href="index.html" class="hover:text-[#5B42F3]">Home</a></li>
+                    <li><a href="products.html" class="text-[#5B42F3]">Products</a></li>
+                    <li><a href="#" class="hover:text-[#5B42F3]">About</a></li>
+                    <li><a href="#" class="hover:text-[#5B42F3]">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="indicator cursor-pointer">
+                    <span id="cart-count" class="indicator-item badge bg-[#5B42F3] text-white border-none text-[10px]">0</span>
+                    <button class="btn btn-ghost btn-circle">
+                        <i class="fa-solid fa-cart-shopping text-xl text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-28 mb-20">
+        <div class="max-w-7xl mx-auto px-5 lg:px-10">
+            <div class="text-center mb-10">
+                <h1 class="text-4xl font-bold text-gray-900 mb-6">Our Products</h1>
+                
+                <div id="category-container" class="flex flex-wrap justify-center gap-3">
+                    </div>
+            </div>
+
+            <div id="spinner" class="hidden text-center py-20">
+                <span class="loading loading-bars loading-lg text-[#5B42F3]"></span>
+            </div>
+
+            <div id="all-product-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#1A2635] text-white pt-16 pb-8 px-5 lg:px-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div>
+                <h2 class="text-xl font-bold mb-4">SwiftCart</h2>
+                <p class="text-gray-400 text-xs leading-relaxed">Your one-stop shop for all your lifestyle needs.</p>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold uppercase mb-4 tracking-widest">Quick Links</h3>
+                <ul class="space-y-2 text-gray-400 text-xs">
+                    <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="products.html" class="hover:text-white">Products</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold uppercase mb-4 tracking-widest">Support</h3>
+                <ul class="space-y-2 text-gray-400 text-xs">
+                    <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    <li><a href="#" class="hover:text-white">Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold uppercase mb-4 tracking-widest">Newsletter</h3>
+                <div class="flex gap-1 bg-white p-1 rounded-md">
+                    <input type="email" placeholder="Email" class="bg-transparent text-gray-800 p-2 flex-grow outline-none text-xs" />
+                    <button class="bg-[#5B42F3] text-white px-3 py-2 rounded-md text-xs">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="product_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box bg-white">
+            <div id="modal-content"></div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn btn-sm">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="pscript.js"></script>
+</body>
+</html>
